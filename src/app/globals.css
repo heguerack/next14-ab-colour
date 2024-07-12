@@ -26,8 +26,126 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* base base base base base base base base base base base base  */
+/* base base base base base base base base base base base base  */
+
+@layer base {
+  @keyframes customPulseAnimation {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(0.98);
+    }
+  }
+
+  @keyframes push-up {
+    0% {
+      transform: translateY(0);
+    }
+    33% {
+      transform: translateY(-0.7rem);
+    }
+    100% {
+      transform: translateY(-0.7rem);
+    }
+  }
+
+  /* Webkit Keyframes for push-up (for compatibility) */
+  @-webkit-keyframes push-up {
+    0% {
+      -webkit-transform: translateY(0);
+    }
+    33% {
+      -webkit-transform: translateY(-0.7rem);
+    }
+    100% {
+      -webkit-transform: translateY(-0.7rem);
+    }
+  }
+}
+/* components components components components components components components  */
+/* components components components components components components components */
+
+@layer components {
+  .blogs-wrapper {
+    @apply p-4 md:p-8 2xl:p-16 md:my-8 h-[100%] w-[100%] 2xl:w-auto border-[1px] border-green rounded flex justify-center items-center bg-gray1 hover:border-orange-500 transition-all duration-500 hover:bg-orange-500;
+  }
+  /* ANIMATIONS  ANIMATIONS  ANIMATIONS  ANIMATIONS  ANIMATIONS */
+
+  /* Custom Pulse Animation */
+  .custom-pulse-animation {
+    @apply animate-customPulse;
+  }
+
+  /* Animation Push Up on Hover */
+  .animation-pushup:hover {
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.7);
+    animation: push-up 1s ease-out forwards;
+  }
+}
+
+/* utilities utilities utilities utilities utilities utilities utilities */
+/* utilities utilities utilities utilities utilities utilities utilities */
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .animate-customPulse {
+    animation: customPulseAnimation 4s infinite;
+  }
 }
+
+/* ANIMATIONS  ANIMATIONS  ANIMATIONS  ANIMATIONS  ANIMATIONS */
+/* .custom-pulse-animation {
+  animation: customPulseAnimation 4s infinite;
+}
+
+.animation-pushup:hover {
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.7);
+  animation: push-up 1s ease-out forwards;
+} */
+
+/* @keyframes customPulseAnimation {
+  0%,
+  100% {
+    opacity: 1;
+    scale: 1.02;
+  }
+  50% {
+    opacity: 0.7;
+    scale: 0.98;
+  }
+}
+
+@-webkit-keyframes push-up {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    -webkit-transform: translateY(-0.7rem);
+    transform: translateY(-0.7rem);
+  }
+  100% {
+    -webkit-transform: translateY(-0.7rem);
+    transform: translateY(-0.7rem);
+  }
+}
+@keyframes push-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  33% {
+    -webkit-transform: translateY(-0.7rem);
+    transform: translateY(-0.7rem);
+  }
+  100% {
+    -webkit-transform: translateY(-0.7rem);
+    transform: translateY(-0.7rem);
+  }
+} */
