@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { GreenButton } from '../util/Buttons'
-import { myServices } from '../../../data/data'
 import { useState, useRef, useEffect } from 'react'
+import { serviceLinks } from '../../../data/serviceLinks'
 
 export default function Navbar() {
   const [showServices, setShowServices] = useState(false)
@@ -32,19 +32,19 @@ export default function Navbar() {
   }, [servicesDropdownRef, aboutDropdownRef])
 
   return (
-    <div className='hidden 2xl:flex items-center gap-6 text-green font-medium '>
-      <div className=''>
+    <ul className='hidden 2xl:flex items-center gap-4 text-green font-medium '>
+      <li className='px-4'>
         <Link href={'/'}>Home</Link>
-      </div>
+      </li>
 
-      <div className='dropdown relative' ref={aboutDropdownRef}>
+      <li className='dropdown relative px-4' ref={aboutDropdownRef}>
         <button
           className='link'
           onClick={() => setShowAboutDropdown(!showAboutDropdown)}>
           About
         </button>
         <ul
-          className={`dropdown-menu absolute bg-green top-[90%] left-[-5rem] py-[1rem] w-[15rem] rounded text-sm text-white transition-opacity duration-300 ease-in-out ${
+          className={`dropdown-menu absolute bg-green top-[100%] left-[-5rem] py-[1rem] w-[15rem] rounded text-sm text-white transition-all duration-300 ease-in-out ${
             showAboutDropdown
               ? 'opacity-1 translate-y-0 pointer-events-auto'
               : 'opacity-0 translate-y-[-20px] pointer-events-none'
@@ -72,22 +72,22 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-      </div>
-      <div className=''>
+      </li>
+      <li className='px-4'>
         <Link href={'/gallery'}>Gallery</Link>
-      </div>
-      <div className='dropdown relative' ref={servicesDropdownRef}>
+      </li>
+      <li className='dropdown relative px-4' ref={servicesDropdownRef}>
         <button className='link' onClick={() => setShowServices(!showServices)}>
           Services
         </button>
         <ul
-          className={`dropdown-menu absolute bg-green top-[90%] left-[-5rem] py-[1rem] w-[15rem] rounded text-sm text-white transition-opacity duration-300 ease-in-out ${
+          className={`dropdown-menu absolute bg-green top-[100%] left-[-5rem] py-[1rem] w-[15rem] rounded text-sm text-white transition-all duration-300 ease-in-out ${
             showServices
               ? 'opacity-1 translate-y-0 pointer-events-auto'
               : 'opacity-0 translate-y-[-20px] pointer-events-none'
           } `}
           style={{ boxShadow: '0 2px 5px 0 rgba(0,0,0, .1)' }}>
-          {myServices.map(({ service, href }, i) => (
+          {serviceLinks.map(({ service, href }, i) => (
             <li className='p-1 ' key={i}>
               <Link
                 href={href}
@@ -97,14 +97,14 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-      </div>
-      <div className=''>
+      </li>
+      <li className='px-4'>
         <Link href={'/contact'}>Contact</Link>
-      </div>
+      </li>
 
-      <div className=''>
+      <li className='px-4'>
         <GreenButton url={'/booking'} title={'Booking'} />
-      </div>
-    </div>
+      </li>
+    </ul>
   )
 }

@@ -1,4 +1,4 @@
-export const myServices = [
+export const serviceLinks = [
   { service: 'interior painting', href: '/services/interior-painting-calgary' },
   { service: 'exterior painting', href: '/services/exterior-painting-calgary' },
   {

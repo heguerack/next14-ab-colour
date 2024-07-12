@@ -1,7 +1,7 @@
 'use client'
 import { useGlobalContext } from '@/context/Context'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 import SidebarAbout from './SidebarAbout'
 import SidebarServices from './SidebarServices'
@@ -10,6 +10,19 @@ export default function Sidebar() {
   const { isSidebarOpen, closeSidebar } = useGlobalContext()
   const [openSection, setOpenSection] = useState(null)
   // const sidebarRef = useRef()
+
+  const [scrollY, setScrollY] = useState(0)
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section)
@@ -21,7 +34,9 @@ export default function Sidebar() {
         <div
           // ref={sidebarRef}
           tabIndex={-1}
-          className='lg:hidden fixed left-0 top-[3rem] h-screen w-full flex flex-col items-center justify-start bg-greenWhite z-30 pt-8 overflow-y-auto shadow-md'
+          className={`lg:hidden fixed z-40 left-0 h-screen w-full flex flex-col items-center justify-start bg-greenWhite  pt-8 overflow-y-auto shadow-md  ${
+            scrollY > 100 ? 'top-[3rem]' : 'top-[5rem]'
+          }`}
           role='dialog'
           aria-modal='true'
           aria-labelledby='sidebar-heading'>

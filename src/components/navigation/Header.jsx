@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed z-20 w-full top-0  bg-white flex items-center justify-between px-4 ${
+      className={`fixed z-50 w-full top-0  bg-white flex items-center justify-between px-4 ${
         scrollY > 100 ? 'h-[3rem] ' : 'h-[5rem]'
       }`}>
       <div className=' flex w-full items-center justify-between max-w-[1600px] mx-auto '>

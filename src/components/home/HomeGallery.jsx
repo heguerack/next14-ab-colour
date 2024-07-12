@@ -1,4 +1,5 @@
 import SliderWidget from '../util/SliderWidget'
+import { homeGalleryImages } from '../../../data/homeGalleryImages'
 
 export default function HomeGallery() {
   return (
@@ -14,7 +15,7 @@ export default function HomeGallery() {
           </h3>
         </div>
 
-        <SliderWidget images={images} />
+        <SliderWidget images={homeGalleryImages} />
         <div className='px-4 mt-12'>
           <p className='text-justify mb-2'>
             Take a look at our gallery to see the high-quality work our Calgary
@@ -37,14 +38,3 @@ export default function HomeGallery() {
     </section>
   )
 }
-
-const images = [
-  {
-    url: '/images/interior-painting/strathmoore-railing-prior-to-painting.jpg',
-    alt: 'Before painting: Oak railing with metal spindles against dark green walls',
-  },
-  {
-    url: '/images/interior-painting/strathmoore-railing-after-painting.jpg',
-    alt: 'After painting: Refreshed off white railing with metal spindles against dark green and off white walls by Calgary painters',
-  },
-]

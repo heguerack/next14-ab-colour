@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useGlobalContext } from '@/context/Context'
-import { myServices } from '../../../data/data'
+import { myServices } from '../../../data/serviceLinks'
 
 export default function SidebarServices() {
   const { closeSidebar } = useGlobalContext()
