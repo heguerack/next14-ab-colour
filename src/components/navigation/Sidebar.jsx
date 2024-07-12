@@ -1,6 +1,7 @@
+'use client'
 import { useGlobalContext } from '@/context/Context'
 import Link from 'next/link'
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 import SidebarAbout from './SidebarAbout'
 import SidebarServices from './SidebarServices'
@@ -13,13 +14,6 @@ export default function Sidebar() {
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section)
   }
-
-  // console.log(sidebarRef.current)
-  // useEffect(() => {
-  //   if (isSidebarOpen) {
-  //     sidebarRef.current.style.backgroundColor = 'red'
-  //   }
-  // }, [isSidebarOpen])
 
   return (
     <>

@@ -13,7 +13,7 @@ export default function HomeBlogsOffers() {
           <div className='blogs-wrapper group'>
             <div className='relative w-[6rem] h-[6rem] rounded border-[1px] border-green group-hover:border-orange-500'>
               <Image
-                className='absolute rounded'
+                className=' rounded'
                 fill={true}
                 src='/images/special-offer-icon.png'
                 alt='Explore special offers for Calgary house painting'

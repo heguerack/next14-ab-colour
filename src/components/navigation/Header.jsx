@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import { useGlobalContext } from '@/context/Context'
 import { IoMdClose } from 'react-icons/io'
 import { usePathname } from 'next/navigation'
+import Link from 'next/link'
 
 export default function Header() {
   const { openSidebar, closeSidebar, isSidebarOpen } = useGlobalContext()
@@ -30,11 +31,12 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed z-20 w-full  bg-white flex items-center justify-between px-4 ${
+      className={`fixed z-20 w-full top-0  bg-white flex items-center justify-between px-4 ${
         scrollY > 100 ? 'h-[3rem] ' : 'h-[5rem]'
       }`}>
       <div className=' flex w-full items-center justify-between max-w-[1600px] mx-auto '>
-        <div
+        <Link
+          href={'/'}
           className={`relative   ${
             scrollY > 100
               ? 'h-[calc(2*1.13rem)] w-[calc(2*2rem)] '
@@ -46,7 +48,7 @@ export default function Header() {
             fill
             alt='Alberta Colour painting logo'
           />
-        </div>
+        </Link>
 
         {isSidebarOpen && <Sidebar />}
 
