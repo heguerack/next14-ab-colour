@@ -4,20 +4,24 @@ import Link from 'next/link'
 
 export default function HomeCredentials() {
   return (
-    <section className='w-full text-center py-12 md:py-16 px-2 bg-slate-200'>
+    <section
+      className='w-full text-center py-12 md:py-16 px-2 bg-slate-200'
+      aria-labelledby='home-credentials-heading'>
       <div className='max-w-[1600px] mx-auto leading-relaxed md:leading-loose'>
-        <h2 className='flex flex-col gap-1 font-medium text-xl md:text-2xl'>
+        <h2
+          id='home-credentials-heading'
+          className='flex flex-col gap-1 font-medium text-xl md:text-2xl'>
           <span>WE ARE YOUR</span>
           <span>CALGARY PAINTING</span>
           <span>COMPANY</span>
         </h2>
-        <p className='my-8 '>
+        <p className='my-8'>
           Alberta Colour Painting is your trusted partner in Calgary, offering
           detailed estimates and unparalleled painting services. As a leading
           Calgary painting company, we pride ourselves on our professional and
           skilled Calgary painters.
         </p>
-        <p className='font-medium mb-8 xs:'>
+        <p className='font-medium mb-8'>
           Our Touch Of Paint Makes A Difference!
         </p>
         <div className='text-base sm:w-[80%] m-auto grid grid-cols-2 md:grid-cols-4 md:w-[100%] xl:w-[90%] 2xl:container 3xl:w-[52%] gap-4 sm:gap-6 md:gap-4 xl:gap-12'>
@@ -25,7 +29,8 @@ export default function HomeCredentials() {
             <Link
               key={index}
               href={item.href}
-              className='gray-500 p-4 bg-gray-600 hover:bg-gray-700 transition text-white rounded-lg'>
+              className='gray-500 p-4 bg-gray-600 hover:bg-gray-700 transition text-white rounded-lg'
+              aria-label={item.alt}>
               <div className='relative h-[26vw] w-[26vw] md:h-[12vw] md:w-[12vw] 2xl:h-[6vw] 2xl:w-[6vw] m-auto bg-white'>
                 <Image
                   src={item.src}

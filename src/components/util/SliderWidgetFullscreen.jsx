@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { RiArrowGoBackFill } from 'react-icons/ri'
@@ -12,8 +11,7 @@ import {
 import Image from 'next/image'
 
 export default function SliderWidgetFullscreen({ images, setFullScreenOff }) {
-  const data = images[0]
-  // console.log(data)
+  // console.log(images)
   const [number, setNumber] = useState(0)
   const [run, setRun] = useState(false)
   // console.log(number)
@@ -21,7 +19,7 @@ export default function SliderWidgetFullscreen({ images, setFullScreenOff }) {
     if (run) {
       let slider = setInterval(() => {
         let myNumber = number + 1
-        if (myNumber > data.length - 1) {
+        if (myNumber > images.length - 1) {
           myNumber = 0
         }
         setNumber(myNumber)
@@ -40,7 +38,7 @@ export default function SliderWidgetFullscreen({ images, setFullScreenOff }) {
 
   const goRight = () => {
     let newNumber = number + 1
-    if (newNumber > data.length - 1) {
+    if (newNumber > images.length - 1) {
       newNumber = 0
     }
     console.log(number)
@@ -49,7 +47,7 @@ export default function SliderWidgetFullscreen({ images, setFullScreenOff }) {
   const goLeft = () => {
     let newNumber = number - 1
     if (newNumber < 0) {
-      newNumber = data.length - 1
+      newNumber = images.length - 1
     }
     setNumber(newNumber)
   }
@@ -57,7 +55,7 @@ export default function SliderWidgetFullscreen({ images, setFullScreenOff }) {
   return (
     <>
       <div className=' h-[85%]'>
-        {data?.map((item, index) => {
+        {images?.map((item, index) => {
           return (
             <div
               key={index}

@@ -1,16 +1,15 @@
 import ServiceHelper from '@/components/util/ServiceHelper'
-import { drywallImages, ps, heading } from '../../../../data/drywallData'
+import { popcornImages, heading, ps } from '../../../../data/popcornData'
 
 export const metadata = {
-  title:
-    'Expert Drywall Repair, Installation, and  Tape &  Mud Services in Calgary',
+  title: 'Calgary Popcorn Ceiling Removal and Repair: Professional Services',
   description:
-    "Looking for reliable drywall repair and installation services in Calgary? At Alberta Colour Painting, we offer a range of services including repair, installation, tapping, and mudding for both residential and commercial properties. Whether you're working on a new construction or a renovation, we've got you covered. Contact us today to learn more.",
+    'Want ceiling popcorn removal services in Calgary? Look no further! Our team is here to transform your popcorn ceilings into smooth and flat surfaces. Contact us today to schedule your consultation and get started on your home renovation project.',
   viewport: 'width=device-width, initial-scale=1.0',
   canonicalUrl:
-    'https://www.albertacolourpainting.com/services/drywall-mud-&-tape-calgary',
+    'https://www.albertacolourpainting.com/services/popcorn-ceiling-removal-calgary',
 }
 
-export default function drywallPage() {
-  return <ServiceHelper heading={heading} images={drywallImages} ps={ps} />
+export default function popcornRemovalPage() {
+  return <ServiceHelper heading={heading} images={popcornImages} ps={ps} />
 }

@@ -1,8 +1,12 @@
 export default function HomeWhyChooseUs() {
   return (
-    <section className='px-4 py-12 md:py-16'>
+    <section
+      className='px-4 py-12 md:py-16'
+      aria-labelledby='why-choose-us-heading'>
       <div className='max-w-[1600px] mx-auto leading-relaxed md:leading-loose'>
-        <h2 className='text-xl md:text-2xl text-center font-medium mb-6'>
+        <h2
+          id='why-choose-us-heading'
+          className='text-xl md:text-2xl text-center font-medium mb-6'>
           Why Alberta Colour Painting Stands Out Among Calgary Painting
           Companies
         </h2>

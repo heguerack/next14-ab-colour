@@ -9,8 +9,6 @@ import SidebarServices from './SidebarServices'
 export default function Sidebar() {
   const { isSidebarOpen, closeSidebar } = useGlobalContext()
   const [openSection, setOpenSection] = useState(null)
-  // const sidebarRef = useRef()
-
   const [scrollY, setScrollY] = useState(0)
 
   const handleScroll = () => {
@@ -32,9 +30,8 @@ export default function Sidebar() {
     <>
       {isSidebarOpen && (
         <div
-          // ref={sidebarRef}
           tabIndex={-1}
-          className={`lg:hidden fixed z-40 left-0 h-screen w-full flex flex-col items-center justify-start bg-greenWhite  pt-8 overflow-y-auto shadow-md  ${
+          className={`2xl:hidden fixed z-40 left-0 h-screen w-full flex flex-col items-center justify-start bg-greenWhite pt-8 overflow-y-auto shadow-md ${
             scrollY > 100 ? 'top-[3rem]' : 'top-[5rem]'
           }`}
           role='dialog'
@@ -44,18 +41,18 @@ export default function Sidebar() {
             Sidebar Menu
           </h2>
           <ul className='w-full'>
-            <li className='w-full border border-blue-200'>
+            <li className='w-full border-b border-blue-200'>
               <Link
                 href='/'
                 onClick={closeSidebar}
-                className='block w-full text-center py-4 hover:bg-gray-300 '>
+                className='block w-full text-center py-4 hover:bg-gray-300'>
                 Home
               </Link>
             </li>
             <li className='w-full border-b border-blue-200'>
               <button
                 onClick={() => toggleSection('about')}
-                className='flex items-center justify-center gap-2 w-full text-center py-4 hover:bg-gray-100 '
+                className='flex items-center justify-center gap-2 w-full text-center py-4 hover:bg-gray-100'
                 aria-expanded={openSection === 'about'}
                 aria-controls='about-menu'>
                 <span>About</span>
@@ -66,7 +63,7 @@ export default function Sidebar() {
             <li className='w-full border-b border-blue-200'>
               <button
                 onClick={() => toggleSection('services')}
-                className='flex items-center justify-center gap-2 w-full text-center py-4 hover:bg-gray-100 '
+                className='flex items-center justify-center gap-2 w-full text-center py-4 hover:bg-gray-100'
                 aria-expanded={openSection === 'services'}
                 aria-controls='services-menu'>
                 <span>Services</span>
@@ -80,25 +77,25 @@ export default function Sidebar() {
             </li>
             <li className='w-full border-b border-blue-200'>
               <Link
-                href='contact'
+                href='/contact'
                 onClick={closeSidebar}
-                className='block w-full text-center py-4 hover:bg-gray-100 '>
+                className='block w-full text-center py-4 hover:bg-gray-100'>
                 Contact
               </Link>
             </li>
             <li className='w-full border-b border-blue-200'>
               <Link
-                href='booking'
+                href='/booking'
                 onClick={closeSidebar}
-                className='block w-full text-center py-4 hover:bg-gray-100 '>
+                className='block w-full text-center py-4 hover:bg-gray-100'>
                 Booking
               </Link>
             </li>
             <li className='w-full border-b border-blue-200'>
               <Link
-                href='gallery'
+                href='/gallery'
                 onClick={closeSidebar}
-                className='block w-full text-center py-4 hover:bg-gray-100 '>
+                className='block w-full text-center py-4 hover:bg-gray-100'>
                 Gallery
               </Link>
             </li>

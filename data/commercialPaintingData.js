@@ -7,24 +7,20 @@ export const ps = [
 ]
 
 export const commercialImages = [
-  //
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672797223/gallery/interiors/commercial/commercial-painting-project-downtown-paint-prep_rdhygl.webp',
-    alt: 'commercial painting - long wall being divided with frog tape, so that when painted it comes in 3 colours for diferent shapes ',
+    alt: 'Calgary commercial painting - long wall being divided with frog tape, so that when painted it comes in 3 colours for different shapes',
   },
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672797223/gallery/interiors/commercial/commercial-painting-project-downtown-paint-finished_swvjnf.webp',
-    alt: 'commercial painting - long wall just painted, it shows a dark blue colour at the bottom, teal colour in the middle, and off white on the top section',
+    alt: 'Calgary commercial painting - long wall just painted, it shows a dark blue colour at the bottom, teal colour in the middle, and off white on the top section',
   },
-
-  //
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672797224/gallery/interiors/commercial/commercial-painting-wherehouse_d4bmy5.webp',
-    alt: 'Wherehouse just painted in Calgary Alberta Canada - The right side is a dark brown, almost black, and the left side is a white colour',
+    alt: 'Warehouse just painted in Calgary Alberta Canada - The right side is a dark brown, almost black, and the left side is a white colour',
   },
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672797222/gallery/interiors/commercial/commercial-painting-guitar_mwiu3q.jpg',
-    alt: 'Ceiling bulkhead in the shape of a guitar, its been painted just like a guitar, it has lights inside so its very colourful',
+    alt: 'Ceiling bulkhead in the shape of a guitar, painted just like a guitar, very colorful',
   },
-  //
 ]

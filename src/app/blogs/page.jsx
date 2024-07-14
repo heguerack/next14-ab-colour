@@ -9,7 +9,7 @@ export const metadata = {
 }
 export default function BlogsPage() {
   return (
-    <div className='py-8 md:py-12 xl:py-16 2xl:py-24 container m-auto  text-justify text-lg leading-relaxed'>
+    <main className='py-8 md:py-12 xl:py-16 2xl:py-24 container m-auto  text-justify text-lg leading-relaxed'>
       <h1 className='my-6 text-center text-2xl font-semibold'>
         Alberta Colour Painting Blogs
       </h1>
@@ -41,6 +41,6 @@ export default function BlogsPage() {
           </div>
         </div>
       ))}
-    </div>
+    </main>
   )
 }

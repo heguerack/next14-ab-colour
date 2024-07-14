@@ -4,32 +4,30 @@ import Link from 'next/link'
 
 export default function ServicesOverview() {
   return (
-    <section className='services-overview px-2 py-12 md:py-16 bg-slate-300 '>
+    <section
+      className='services-overview px-2 py-12 md:py-16 bg-slate-300'
+      aria-labelledby='services-overview-heading'>
       <div className='max-w-[1600px] mx-auto leading-relaxed md:leading-loose'>
-        <h2 className='text-xl md:text-2xl md:mb-8 text-center font-medium'>
+        <h2
+          id='services-overview-heading'
+          className='text-xl md:text-2xl md:mb-8 text-center font-medium'>
           Comprehensive Painting Services in Calgary
         </h2>
         <div className='flex flex-wrap justify-center gap-2 py-8 md:gap-4 2xl:gap-8'>
-          {services.map(({ id, title, url, img, alt }) => {
-            return (
-              <Link
-                href={url}
-                key={id}
-                className='flex flex-col items-center w-[45%] md:w-[30%] 2xl:w-[15%] bg-green hover:bg-greenDark cursor-pointer box-border rounded px-2 py-4 '>
-                <div className='relative w-[8rem] h-[8rem] bg-white'>
-                  <Image
-                    alt={alt}
-                    src={img}
-                    layout='fill'
-                    objectFit='contain'
-                  />
-                </div>
-                <div>
-                  <h3 className='text-center text-white py-4'>{title}</h3>
-                </div>
-              </Link>
-            )
-          })}
+          {services.map(({ id, title, url, img, alt }) => (
+            <Link
+              href={url}
+              key={id}
+              className='flex flex-col items-center w-[45%] md:w-[30%] 2xl:w-[15%] bg-green hover:bg-greenDark cursor-pointer box-border rounded px-2 py-4'
+              aria-label={title}>
+              <div className='relative w-[8rem] h-[8rem] bg-white'>
+                <Image alt={alt} src={img} layout='fill' objectFit='contain' />
+              </div>
+              <div>
+                <h3 className='text-center text-white py-4'>{title}</h3>
+              </div>
+            </Link>
+          ))}
         </div>
         <div className='flex justify-center'>
           <ButtonEstimate />
@@ -51,7 +49,7 @@ const services = [
     id: 2,
     title: 'Exterior Painting Calgary',
     img: '/images/exterior-painting-brush.webp',
-    alt: 'exterior painting services by expert Calgary painters',
+    alt: 'Exterior painting services by expert Calgary painters',
     url: '/services/exterior-painting-calgary',
   },
   {

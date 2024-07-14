@@ -11,7 +11,7 @@ export const metadata = {
 export default function BlogsPage() {
   const blog = blogsPageData[0]
   return (
-    <div className='bg-red-50 md:px-8  md:py-12 lg:px-16 xl:px-32 3xl:px-64  xl:py-16 2xl:py-24 container m-auto  text-justify text-lg leading-relaxed w-[100%] xl:w-[90vw] 2xl:w-[80vw]'>
+    <main className='bg-red-50 md:px-8  md:py-12 lg:px-16 xl:px-32 3xl:px-64  xl:py-16 2xl:py-24 container m-auto  text-justify text-lg leading-relaxed w-[100%] xl:w-[90vw] 2xl:w-[80vw]'>
       <div className={` m-auto flex flex-col    ${blog.bg ? blog.bg : ''}`}>
         <div className='relative w-[100%] h-[55vw] xl:h-[33vw] 2xl:h-[20.6vw] sm:rounded-t-lg'>
           <Image
@@ -53,6 +53,6 @@ export default function BlogsPage() {
           <GreenButton title='Go Back to Blogs' url='/blogs' />
         </div>
       </div>
-    </div>
+    </main>
   )
 }

@@ -25,12 +25,10 @@ export default function SliderWidget({ images }) {
       return () => {
         clearInterval(slider)
       }
-    } else {
-      return
     }
   }, [number, run])
 
-  const togleSlider = () => {
+  const toggleSlider = () => {
     setRun(!run)
   }
 
@@ -49,54 +47,59 @@ export default function SliderWidget({ images }) {
     setNumber(newNumber)
   }
   return (
-    <div className='flex justify-center '>
-      <div className='  w-full  h-[70vw] sm:h-[65vw] landscape:sm:w-[70vw]  landscape:sm:h-[70vh] landscape:2xl:w-[50vw]  '>
-        <div className='h-[85%] w-[100%] flex justify-center'>
-          {images?.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className={
-                  index === number
-                    ? 'relative flex  w-[100%] h-[100%] rounded-lg justify-center flex-grow visible '
-                    : ' invisible opacity-0'
-                }>
-                <div className='relative w-[100%] h-[100%]'>
-                  <Image
-                    src={item.url}
-                    alt={item.alt}
-                    className='absolute top-0 left-0  h-[100%] w-[100%] rounded-lg'
-                    fill={true}
-                    style={{
-                      objectFit: 'cover',
-                    }}
-                  />
-                </div>
+    <div className='flex justify-center'>
+      <div className='w-full h-[70vw] sm:h-[65vw] landscape:sm:w-[70vw] landscape:sm:h-[70vh] landscape:2xl:w-[50vw]'>
+        <div
+          className='h-[85%] w-[100%] flex justify-center'
+          role='region'
+          aria-label='Gallery Slider'>
+          {images?.map((item, index) => (
+            <div
+              key={index}
+              className={
+                index === number
+                  ? 'relative flex w-[100%] h-[100%] rounded-lg justify-center flex-grow visible'
+                  : 'invisible opacity-0'
+              }
+              aria-hidden={index !== number}>
+              <div className='relative w-[100%] h-[100%]'>
+                <Image
+                  src={item.url}
+                  alt={item.alt}
+                  className='absolute top-0 left-0 h-[100%] w-[100%] rounded-lg'
+                  fill={true}
+                  style={{
+                    objectFit: 'cover',
+                  }}
+                />
               </div>
-            )
-          })}
+            </div>
+          ))}
         </div>
-        {/* BUTTONS  BUTTONS  BUTTONS  BUTTONS  BUTTONS  BUTTONS  BUTTONS  */}
-        {/* BUTTONS  BUTTONS  BUTTONS  BUTTONS  BUTTONS  BUTTONS  BUTTONS  */}
-        <div className='flex justify-center items-center relative my-6 gap-10  md:my-8 lg:gap-12  lg:my-12 2xl:my-6'>
+        {/* BUTTONS */}
+        <div className='flex justify-center items-center relative my-6 gap-10 md:my-8 lg:gap-12 lg:my-12 2xl:my-6'>
           <BsFillArrowLeftCircleFill
             onClick={goLeft}
-            className=' text-3xl sm:text-3xl md:text-4xl  text-green cursor-pointer hover:text-greenDark'
+            className='text-3xl sm:text-3xl md:text-4xl text-green cursor-pointer hover:text-greenDark'
+            aria-label='Previous slide'
           />
           {run ? (
             <BsPauseCircleFill
-              onClick={togleSlider}
+              onClick={toggleSlider}
               className='text-3xl sm:text-3xl md:text-4xl text-green cursor-pointer hover:text-greenDark slider-button-pause'
+              aria-label='Pause slider'
             />
           ) : (
             <BsPlayCircleFill
-              onClick={togleSlider}
-              className='text-3xl sm:text-3xl md:text-4xl  text-green cursor-pointer hover:text-greenDark slider-button-play'
+              onClick={toggleSlider}
+              className='text-3xl sm:text-3xl md:text-4xl text-green cursor-pointer hover:text-greenDark slider-button-play'
+              aria-label='Play slider'
             />
           )}
           <BsFillArrowRightCircleFill
             onClick={goRight}
             className='text-3xl sm:text-3xl md:text-4xl text-green cursor-pointer hover:text-greenDark'
+            aria-label='Next slide'
           />
         </div>
       </div>

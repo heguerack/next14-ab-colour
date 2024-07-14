@@ -7,6 +7,11 @@ export const metadata = {
   viewport: 'width=device-width, initial-scale=1.0',
 }
 
-export default function bookingPainting() {
-  return <Calendly />
+export default function BookingPainting() {
+  return (
+    <main>
+      <h1 className='sr-only '>Booking Painting Services</h1>
+      <Calendly />
+    </main>
+  )
 }

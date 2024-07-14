@@ -4,16 +4,19 @@ import Link from 'next/link'
 
 export default function HomeBlogsOffers() {
   return (
-    <section className='w-full   my-12 2xl:my-16 sm:pb-4'>
+    <section
+      className='w-full my-12 2xl:my-16 sm:pb-4'
+      aria-labelledby='blogs-offers-heading'>
       <div className='max-w-[1600px] mx-auto leading-relaxed md:leading-loose flex flex-col justify-center items-center 2xl:flex-row 2xl:h-[40rem] 2xl:mb-32'>
         {/* IMAGE WRAPPER */}
         <Link
           href='/offers'
-          className='w-[100%] flex justify-start items-center 2xl:w-1/3 2xl:h-[90%]'>
+          className='w-[100%] flex justify-start items-center 2xl:w-1/3 2xl:h-[90%]'
+          aria-label='Explore special offers for Calgary house painting'>
           <div className='blogs-wrapper group'>
             <div className='relative w-[6rem] h-[6rem] rounded border-[1px] border-green group-hover:border-orange-500'>
               <Image
-                className=' rounded'
+                className='rounded'
                 fill={true}
                 src='/images/special-offer-icon.png'
                 alt='Explore special offers for Calgary house painting'
@@ -23,7 +26,9 @@ export default function HomeBlogsOffers() {
         </Link>
         {/* CONTENT */}
         <div className='p-2 2xl:w-2/3'>
-          <h2 className='text-center mt-16 mb-6 text-xl md:text-2xl font-medium'>
+          <h2
+            id='blogs-offers-heading'
+            className='text-center mt-16 mb-6 text-xl md:text-2xl font-medium'>
             Top Calgary House Painting Offers and Discounts
           </h2>
           <p className='text-justify text-lg'>
@@ -42,7 +47,7 @@ export default function HomeBlogsOffers() {
         </div>
       </div>
 
-      <div className='max-w-[1600px] mx-auto leading-relaxed md:leading-loose flex flex-col justify-center items-center 2xl:flex-row 2xl:h-[40rem] 2xl:mb-32]'>
+      <div className='max-w-[1600px] mx-auto leading-relaxed md:leading-loose flex flex-col justify-center items-center 2xl:flex-row 2xl:h-[40rem] 2xl:mb-32'>
         <div className='p-2 2xl:w-2/3'>
           <h2 className='text-center my-8 text-xl xs:text-2xl font-medium'>
             Interior Painting Tips from Calgary's Best Painters
@@ -62,7 +67,8 @@ export default function HomeBlogsOffers() {
         </div>
         <Link
           href='/blogs'
-          className='w-[100%] flex justify-end items-center 2xl:w-1/3 2xl:h-[90%]'>
+          className='w-[100%] flex justify-end items-center 2xl:w-1/3 2xl:h-[90%]'
+          aria-label='Blog icon for Calgary Painting Insights'>
           <div className='blogs-wrapper group'>
             <div className='relative w-[6rem] h-[6rem] rounded border border-[var(--green-5)] group-hover:border-orange-500'>
               <Image

@@ -1,7 +1,11 @@
 export default function HomeIntro() {
   return (
-    <section className=' text-justify px-4  py-8 md:py-16'>
-      {/* style={{ wordSpacing: '0.25rem' }} */}
+    <section
+      className='text-justify px-4 py-8 md:py-16'
+      aria-labelledby='home-intro-heading'>
+      <h2 id='home-intro-heading' className='sr-only'>
+        Introduction
+      </h2>
       <p className='max-w-[1600px] mx-auto leading-relaxed md:leading-loose'>
         Welcome to Alberta Colour Painting, your trusted partner for
         professional interior and exterior painting services in Calgary. Our

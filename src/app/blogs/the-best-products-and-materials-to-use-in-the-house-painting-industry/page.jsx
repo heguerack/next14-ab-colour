@@ -12,7 +12,7 @@ export const metadata = {
 export default function Page() {
   const blog = blogsPageData[2]
   return (
-    <div className='bg-yellow-50  py-8 md:py-12 xl:py-16 2xl:py-24 container m-auto  text-justify text-lg leading-relaxed w-[100%] xl:w-[70vw] 2xl:w-[40vw]'>
+    <main className='bg-yellow-50  py-8 md:py-12 xl:py-16 2xl:py-24 container m-auto  text-justify text-lg leading-relaxed w-[100%] xl:w-[70vw] 2xl:w-[40vw]'>
       <div className={` m-auto flex flex-col    ${blog.bg ? blog.bg : ''}`}>
         <div className='relative w-[100%] h-[55vw] xl:h-[33vw] 2xl:h-[20.6vw] sm:rounded-t-lg'>
           <Image
@@ -60,6 +60,6 @@ export default function Page() {
           <GreenButton title='Go Back to Blogs' url='/blogs' />
         </div>
       </div>
-    </div>
+    </main>
   )
 }

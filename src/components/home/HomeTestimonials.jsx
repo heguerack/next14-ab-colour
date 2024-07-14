@@ -4,9 +4,13 @@ import HomestarsReviewsSmall from '../util/HomestarsReviewsSmall'
 
 export default function HomeTestimonials() {
   return (
-    <section className='bg-slate-50  py-12 md:py-16'>
+    <section
+      className='bg-slate-50 py-12 md:py-16'
+      aria-labelledby='testimonials-heading'>
       <div className='max-w-[1600px] mx-auto leading-relaxed md:leading-loose'>
-        <h2 className='text-xl md:text-2xl text-center font-medium  px-4 mb-4'>
+        <h2
+          id='testimonials-heading'
+          className='text-xl md:text-2xl text-center font-medium px-4 mb-4'>
           What Our Calgary Customers Say About Alberta Colour Painting
         </h2>
         <p className='text-justify px-4 mb-2'>
@@ -19,9 +23,9 @@ export default function HomeTestimonials() {
           Calgary house painters or a full-service Calgary painting company, our
           customers' reviews speak volumes about our expertise and reliability.
         </p>
-        <GoogleReviews />
-        <HomestarsReviewsSmall />
-        <HomestarsReviewsBig />
+        <GoogleReviews aria-label='Google Reviews' />
+        <HomestarsReviewsSmall aria-label='Homestars Reviews Small' />
+        <HomestarsReviewsBig aria-label='Homestars Reviews Big' />
       </div>
     </section>
   )
