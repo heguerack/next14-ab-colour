@@ -9,7 +9,8 @@ import HomeVideo from '@/components/home/HomeVideo'
 import HomeWhyChooseUs from '@/components/home/HomeWhyChooseUs'
 
 export const metadata = {
-  title: 'Alberta Colour Painting - Top Rated Affordable Calgary Painters',
+  title:
+    'Expert Calgary Painters for Exterior  and Interior House Painting - Alberta Colour Painting',
   description:
     'Looking for affordable Calgary painters? We are a top-rated house painting company in Calgary, offering professional interior painting services for your needs.',
   viewport: 'width=device-width, initial-scale=1.0',
