@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import { useGlobalContext } from '@/context/Context'
-import { myServices } from '../../../data/serviceLinks'
+import { serviceLinks } from '../../../data/serviceLinks'
 
 export default function SidebarServices() {
   const { closeSidebar } = useGlobalContext()
 
   return (
     <ul id='services-menu' className='w-full bg-gray-200 py-2'>
-      {myServices.map(({ service, href }, i) => (
+      {serviceLinks?.map(({ service, href }, i) => (
         <li className='w-full' key={i}>
           <Link
             href={href}
