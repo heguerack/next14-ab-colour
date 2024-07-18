@@ -19,8 +19,10 @@ export default function Hero() {
           <h1
             id='hero-heading'
             className='max-w-[800px] text-white xs:text-lg sm:text-xl md:text-3xl text-center font-medium leading-loose xs:leading-10 sm:leading-[3rem] md:leading-[4rem]'>
-            Exterior and Interior Painting Services with Expert Calgary Painters
-            at Alberta Colour Painting
+            {/* Exterior and Interior Painting Services with Expert Calgary Painters
+            at Alberta Colour Painting */}
+            Expert Calgary Painters for Interior and Exterior House Painting
+            services at Alberta Colour Painting
           </h1>
         </div>
         <ButtonEstimate />

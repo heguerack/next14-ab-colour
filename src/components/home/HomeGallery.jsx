@@ -1,5 +1,5 @@
-import SliderWidget from '../util/SliderWidget'
 import { homeGalleryImages } from '../../../data/homeGalleryImages'
+import HomeLazySliderWidget from './HomeLazySliderWidget'
 
 export default function HomeGallery() {
   return (
@@ -15,7 +15,7 @@ export default function HomeGallery() {
           </h3>
         </div>
 
-        <SliderWidget images={homeGalleryImages} />
+        <HomeLazySliderWidget images={homeGalleryImages} />
         <div className='px-4 mt-12'>
           <p className='text-justify mb-2'>
             Take a look at our gallery to see the high-quality work our Calgary

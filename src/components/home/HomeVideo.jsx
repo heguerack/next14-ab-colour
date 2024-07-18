@@ -1,4 +1,5 @@
 import ButtonEstimate from '../util/ButtonEstimate'
+import HomeLazyVideo from './HomeLazyVideo'
 
 export default function HomeVideo() {
   return (
@@ -16,11 +17,7 @@ export default function HomeVideo() {
           painting services in Calgary. Watch our video to learn more about our
           comprehensive services and commitment to quality.
         </p>
-        <iframe
-          className='w-full h-[56.2vw] 2xl:w-3/4 2xl:h-[42.2vw] 3xl:w-2/3 3xl:h-[37.6vw] 4xl:w-1/2 4xl:h-[28vw]'
-          src='https://www.youtube.com/embed/u3HHpLQDVsk?autoplay=1&mute=1'
-          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-          title='Transform Your Space with Alberta Colour Painting Video'></iframe>
+        <HomeLazyVideo />
         <p className='text-center mt-6 mb-4'>
           We are fully insured and licensed, with perfect ratings on Google,
           HomeStars, and the BBB. Contact us today for a free estimate.
