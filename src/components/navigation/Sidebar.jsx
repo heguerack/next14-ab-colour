@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 import SidebarAbout from './SidebarAbout'
-// import SidebarServices from './SidebarServices'
+import SidebarServices from './SidebarServices'
 
 export default function Sidebar() {
   const { isSidebarOpen, closeSidebar } = useGlobalContext()
