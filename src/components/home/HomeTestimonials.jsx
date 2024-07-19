@@ -1,6 +1,6 @@
-import GoogleReviews from '../util/GoogleReviews'
-import HomestarsReviewsBig from '../util/HomestarsReviewsBig'
-import HomestarsReviewsSmall from '../util/HomestarsReviewsSmall'
+import HomeLazyGoogleReviews from './HomeLazyGoogleReviews'
+import HomeLazyHomestarsSmall from './HomeLazyHomestarsSmall'
+import HomeLazyHomestarsBig from './HomeLazyHomestarsBig'
 
 export default function HomeTestimonials() {
   return (
@@ -23,9 +23,9 @@ export default function HomeTestimonials() {
           Calgary house painters or a full-service Calgary painting company, our
           customers' reviews speak volumes about our expertise and reliability.
         </p>
-        <GoogleReviews aria-label='Google Reviews' />
-        <HomestarsReviewsSmall aria-label='Homestars Reviews Small' />
-        <HomestarsReviewsBig aria-label='Homestars Reviews Big' />
+        <HomeLazyGoogleReviews aria-label='Google Reviews' />
+        <HomeLazyHomestarsSmall aria-label='Homestars Reviews Small' />
+        <HomeLazyHomestarsBig aria-label='Homestars Reviews Big' />
       </div>
     </section>
   )

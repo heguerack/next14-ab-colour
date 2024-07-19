@@ -48,7 +48,7 @@ export default function SliderWidget({ images }) {
   }
   return (
     <div className='flex justify-center'>
-      <div className='w-full min-h-[50rem] h-[70vw] sm:h-[65vw] landscape:sm:w-[70vw] landscape:sm:h-[70vh] landscape:2xl:w-[50vw]'>
+      <div className='w-full  h-[70vw] sm:h-[65vw] landscape:sm:w-[70vw] landscape:sm:h-[70vh] landscape:2xl:w-[50vw]'>
         <div
           className='h-[85%] w-[100%] flex justify-center'
           role='region'

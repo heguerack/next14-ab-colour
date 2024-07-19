@@ -1,4 +1,5 @@
 import ButtonEstimate from '@/components/util/ButtonEstimate'
+import GoogleVideo from '@/components/util/GoogleVideo'
 import Image from 'next/image'
 import { AiFillCheckCircle, AiFillCheckSquare } from 'react-icons/ai'
 import { BsPatchCheckFill } from 'react-icons/bs'
@@ -23,12 +24,7 @@ export default function AboutPage() {
           }}
         />
       </div>
-      <div className='flex justify-center  '>
-        <iframe
-          className='w-full h-[56vw] 2xl:my-24 2xl:w-[50vw] 2xl:h-[28.1vw] '
-          src='https://www.youtube.com/embed/u3HHpLQDVsk?autoplay=1&mute=1'
-          allow='accelerometer;  autoplay; encrypted-media; gyroscope; picture-in-picture'></iframe>
-      </div>
+      <GoogleVideo />
       <div className='  text-lg '>
         {/* CARD1  CARD1  --- CARD1  CARD1    CARD1  CARD1  --- CARD1  CARD1  --- CARD1  CARD1  --- CARD1  CARD1  --- CARD1*/}
         <div className='bg-gray-700 text-white p-4 py-16 md:py-24 xl:py-32'>
