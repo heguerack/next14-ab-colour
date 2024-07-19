@@ -14,14 +14,14 @@ export default function Hero() {
           role='img'
         />
       </div>
-      <div className='absolute left-0 top-0 px-2 flex flex-col items-center justify-center gap-8 xs:gap-12 sm:gap-16 md:gap-24 bg-[rgba(0,0,0,.7)] h-[calc(100vh-5rem)] w-full'>
+      <div className='absolute left-0 top-0 px-2 flex flex-col items-center justify-center gap-8 xs:gap-12 sm:gap-16 md:gap-24 bg-[rgba(0,0,0,.6)] h-[calc(100vh-5rem)] w-full'>
         <div className='flex flex-col items-center justify-center text-center px-4 md:px-16'>
           <h1
             id='hero-heading'
-            className='max-w-[800px] text-white xs:text-lg sm:text-xl md:text-3xl text-center font-medium leading-loose xs:leading-10 sm:leading-[3rem] md:leading-[4rem]'>
+            className='max-w-[700px] text-white text-xl xs:text-2xl sm:text-3xl md:text-4xl text-center font-medium leading-loose xs:leading-10 sm:leading-[3rem] md:leading-[4rem]'>
             {/* Exterior and Interior Painting Services with Expert Calgary Painters
             at Alberta Colour Painting */}
-            Expert Calgary Painters for Exterior and Interior House Painting
+            Expert Calgary Painters for Exterior & Interior House Painting
             services at Alberta Colour Painting
           </h1>
         </div>

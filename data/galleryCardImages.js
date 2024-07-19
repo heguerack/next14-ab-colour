@@ -8,7 +8,7 @@ export const galleryCards = [
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672797221/gallery/drywall/ceiling-texturing-showcase/knockdown-ceiling-textuting_ypz2aw.webp',
     alt: 'knockdown ceiling texture sample from Alberta Colour Painting in Calgary',
-    title: 'ceiling Texturing',
+    title: 'Ceiling Texturing',
   },
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672797223/gallery/interiors/commercial/commercial-painting-project-downtown-paint-prep_rdhygl.webp',
@@ -18,12 +18,12 @@ export const galleryCards = [
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1687019711/gallery/drywall/skyview/garage-drywall-repair-calgary_valeh0.jpg',
     alt: 'Calgary garage drywall repair - A 2 feet by 3 feet hole before fixed',
-    title: 'drywall $ Mud',
+    title: 'Drywall & Mud',
   },
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672797204/gallery/exteriors/siding/blue-siding/exterior-siding-being-painted_d98zgd.jpg',
     alt: 'Exterior siding being painted by Calgary exterior painters from Alberta Colour Painting',
-    title: 'exterior Painting',
+    title: 'Exterior Painting',
   },
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672797184/gallery/interiors/garages/auburn%20garage/20201113_110122_ustpqw.jpg',
@@ -33,7 +33,7 @@ export const galleryCards = [
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672797202/gallery/interiors/cabinets/donalson/20200814_133048_ru924w.jpg',
     alt: 'Kitchen cabinets to be spray painted in Calgary, Alberta, showing doors and drawers by stove and microwave',
-    title: 'Cabinet painting',
+    title: 'Cabinet Painting',
   },
   {
     url: 'https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672797205/gallery/interiors/ceilings/marc-ceilings/IMG-20210103-WA0032_gwbxw9.jpg',
