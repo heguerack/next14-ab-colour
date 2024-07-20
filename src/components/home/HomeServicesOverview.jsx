@@ -18,7 +18,7 @@ export default function ServicesOverview() {
             <Link
               href={url}
               key={id}
-              className='flex flex-col items-center w-[45%] md:w-[30%] 2xl:w-[15%] bg-green hover:bg-greenDark cursor-pointer box-border rounded px-2 py-4'
+              className='flex flex-col items-center w-[45%] md:w-[30%] 2xl:w-[14%] bg-green hover:bg-greenDark cursor-pointer box-border rounded px-2 py-4'
               aria-label={title}>
               <div className='relative w-[8rem] h-[8rem] bg-white'>
                 <Image alt={alt} src={img} layout='fill' objectFit='contain' />

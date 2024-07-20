@@ -14,7 +14,7 @@ export default function Hero() {
           role='img'
         />
       </div>
-      <div className='absolute left-0 top-0 px-2 flex flex-col items-center justify-center gap-8 xs:gap-12 sm:gap-16 md:gap-24 bg-[rgba(0,0,0,.6)] h-[calc(100vh-5rem)] w-full'>
+      <div className='absolute left-0 top-0 px-2 flex flex-col items-center justify-center gap-8 xs:gap-12 sm:gap-16 md:gap-24 bg-[rgba(0,0,0,.5)] h-[calc(100vh-5rem)] w-full'>
         <div className='flex flex-col items-center justify-center text-center px-4 md:px-16'>
           <h1
             id='hero-heading'
