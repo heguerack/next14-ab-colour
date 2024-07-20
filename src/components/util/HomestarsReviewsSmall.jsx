@@ -7,6 +7,7 @@ export default function HomestarsReviewsSmall() {
   return (
     <>
       <iframe
+        className=''
         height='280'
         frameBorder='0'
         width='330'

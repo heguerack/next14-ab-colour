@@ -21,8 +21,8 @@ export default function Hero() {
             className='max-w-[700px] text-white text-xl xs:text-2xl sm:text-3xl md:text-4xl text-center font-medium leading-loose xs:leading-10 sm:leading-[3rem] md:leading-[4rem]'>
             {/* Exterior and Interior Painting Services with Expert Calgary Painters
             at Alberta Colour Painting */}
-            Expert Calgary Painters for Exterior & Interior House Painting
-            services at Alberta Colour Painting
+            Expert Calgary Painters for Interior and Exterior House Painting
+            Services
           </h1>
         </div>
         <ButtonEstimate />

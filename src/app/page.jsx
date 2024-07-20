@@ -10,9 +10,9 @@ import HomeWhyChooseUs from '@/components/home/HomeWhyChooseUs'
 
 export const metadata = {
   title:
-    'Expert Calgary Painters for Exterior  and Interior House Painting - Alberta Colour Painting',
+    'Painting Company with Expert Calgary Painters for Exterior  and Interior House Painting services',
   description:
-    'Looking for affordable Calgary painters? We are a top-rated house painting company in Calgary, offering professional interior painting services for your needs.',
+    'Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.',
   viewport: 'width=device-width, initial-scale=1.0',
   canonicalUrl: 'https://www.albertacolourpainting.com',
   og: {
@@ -33,10 +33,10 @@ export default function Home() {
       <Hero />
       <HomeIntro />
       <HomeServicesOverview />
+      <HomeTestimonials />
       <HomeWhyChooseUs />
       <HomeGallery />
       <HomeVideo />
-      <HomeTestimonials />
       <HomeCredentials />
       <HomeBlogsOffers />
     </main>

@@ -11,7 +11,7 @@ export default function HomeLazyHomestarsSmall() {
   return (
     <div
       ref={observe}
-      className=' min-h-[280px] flex justify-center  md:hidden'
+      className=' md:hidden flex justify-center'
       aria-labelledby='homestars-reviews-small-heading'>
       <h3 id='homestars-reviews-small-heading' className='sr-only'>
         Homestars Reviews Small
