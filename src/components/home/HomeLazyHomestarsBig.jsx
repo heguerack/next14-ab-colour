@@ -5,7 +5,7 @@ import HomestarsReviewsBig from '../util/HomestarsReviewsBig'
 export default function HomeLazyHomestarsBig() {
   const { observe, inView } = useInView({
     unobserveOnEnter: true,
-    rootMargin: '500px',
+    rootMargin: '700px',
   })
 
   return (
@@ -16,7 +16,7 @@ export default function HomeLazyHomestarsBig() {
       <h3 id='homestars-reviews-big-heading' className='sr-only'>
         Homestars Reviews Big
       </h3>
-      <HomestarsReviewsBig />
+      {inView && <HomestarsReviewsBig />}
     </div>
   )
 }
