@@ -5,7 +5,7 @@ import HomestarsReviewsSmall from '../util/HomestarsReviewsSmall'
 export default function HomeLazyHomestarsSmall() {
   const { observe, inView } = useInView({
     unobserveOnEnter: true,
-    rootMargin: '2000px',
+    rootMargin: '1000px',
   })
 
   return (
