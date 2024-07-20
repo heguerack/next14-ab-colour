@@ -5,7 +5,7 @@ import GoogleReviews from '../util/GoogleReviews'
 export default function HomeLazyGoogleReviews() {
   const { observe, inView } = useInView({
     unobserveOnEnter: true,
-    rootMargin: '1500px',
+    rootMargin: '500px',
   })
   return (
     <div
