@@ -43,15 +43,11 @@ export default function Navbar() {
   }
 
   return (
-    <nav>
-      <ul
-        className='hidden 2xl:flex items-center gap-4 text-green font-medium'
-        role='navigation'
-        aria-label='Main Navigation'>
+    <nav role='navigation' aria-label='Main Navigation'>
+      <ul className='hidden 2xl:flex items-center gap-4 text-green font-medium'>
         <li className='px-4'>
           <Link href='/'>Home</Link>
         </li>
-
         <li className='dropdown relative px-4' ref={aboutDropdownRef}>
           <button
             className='link'
